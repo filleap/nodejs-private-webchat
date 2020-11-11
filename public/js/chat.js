@@ -33,7 +33,8 @@ $(function(){
 		// yourEmail = $("#yourEmail"),
 		yourEmail = "yourEmail@mail.com",
 		hisName = $("#hisName"),
-		hisEmail = $("#hisEmail"),
+		// hisEmail = $("#hisEmail"),
+		hisEmail = "hisEmail@gmail.com",
 		chatForm = $("#chatform"),
 		textarea = $("#message"),
 		messageTimeSent = $(".timesent"),
@@ -129,7 +130,9 @@ $(function(){
 					alert("There already is a \"" + name + "\" in this room!");
 					return;
 				}
-				email = hisEmail.val();
+
+				// email = hisEmail.val();
+				email = hisEmail;
 
 				if(!isValid(email)){
 					alert("Wrong e-mail format!");
