@@ -30,7 +30,8 @@ $(function(){
 		leftNickname = $(".nickname-left"),
 		loginForm = $(".loginForm"),
 		yourName = $("#yourName"),
-		yourEmail = $("#yourEmail"),
+		// yourEmail = $("#yourEmail"),
+		yourEmail = "yourEmail@mail.com",
 		hisName = $("#hisName"),
 		hisEmail = $("#hisEmail"),
 		chatForm = $("#chatform"),
@@ -88,11 +89,12 @@ $(function(){
 				name = $.trim(yourName.val());
 
 				if(name.length < 1){
-					alert("Please enter a nick name longer than 1 character!");
+					alert("Merci de choisir un pseudi d'au moins 1 caractère !");
 					return;
 				}
 
-				email = yourEmail.val();
+				// email = yourEmail.val();
+				email = yourEmail;
 
 				if(!isValid(email)) {
 					alert("Please enter a valid email!");
@@ -273,7 +275,7 @@ $(function(){
 
 		var who = '';
 
-		if(user===name) {
+		if(user === name) {
 			who = 'me';
 		}
 		else {
@@ -283,7 +285,7 @@ $(function(){
 		var li = $(
 			'<li class=' + who + '>'+
 				'<div class="image">' +
-					'<img src=' + imgg + ' />' +
+					// '<img src=' + imgg + ' />' +
 					'<b></b>' +
 					'<i class="timesent" data-time=' + now + '></i> ' +
 				'</div>' +
