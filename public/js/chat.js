@@ -290,7 +290,7 @@ $(function(){
 				'<div class="image">' +
 					// '<img src=' + imgg + ' />' +
 					'<b></b>' +
-					'<i class="timesent" data-time=' + now + '></i> ' +
+					// '<i class="timesent" data-time=' + now + '></i> ' +
 				'</div>' +
 				'<p></p>' +
 			'</li>');
