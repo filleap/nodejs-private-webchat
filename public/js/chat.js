@@ -122,7 +122,7 @@ $(function(){
 				name = $.trim(hisName.val());
 
 				if(name.length < 1){
-					alert("Please enter a nick name longer than 1 character!");
+					alert("Merci de choisir un pseudi d'au moins 1 caractère !");
 					return;
 				}
 
