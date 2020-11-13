@@ -200,7 +200,7 @@ $(function(){
 			createChatMessage(data.msg, data.user, data.img, moment());
 			scrollToBottom();
 			countMissChats();
-			audioElement.play();
+			// audioElement.play();
 	});
 
 	textarea.keypress(function(e){
@@ -233,7 +233,7 @@ $(function(){
 		textarea.val("");
 
 		//play sound notification
-		audioElement.play();
+		// audioElement.play();
 	});
 
 
